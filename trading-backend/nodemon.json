@@ -1,0 +1,28 @@
+{
+  "watch": [
+    "trading-app"
+  ],
+  "ignore": [
+    "node_modules",
+    ".git",
+    "*.md"
+  ],
+  "ext": "js,html,css,json",
+  "delay": 500,
+  "restartable": "rs",
+  "verbose": true,
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": "5000"
+  },
+  "exec": "node",
+  "script": "trading-app/server.js",
+  "legacyWatch": false,
+  "runOnChangeOnly": false,
+  "events": {
+    "restart": "echo 'App restarted'",
+    "crash": "echo 'App crashed'",
+    "quit": "echo 'App quit'",
+    "exit": "echo 'App exited'"
+  }
+}
